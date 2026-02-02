@@ -13,9 +13,12 @@ session_start();
 </head>
 
 <body>
-<?php
-require_once 'php/header.php';
-require_once 'php/footer.php';
-?>
+<?php require_once 'php/header.php'; ?>
+
+<main>
+    <h2 style="text-align: center; padding: 50px;">Bienvenido a Ferretería García</h2>
+</main>
+
+<?php require_once 'php/footer.php'; ?>
 </body>
 </html>
