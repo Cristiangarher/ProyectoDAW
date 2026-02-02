@@ -11,6 +11,8 @@ $ruta_base = $en_subcarpeta ? "../" : "";
 $ruta_php = $en_subcarpeta ? "" : "php/";
 ?>
 
+<link rel="stylesheet" href="<?php echo $ruta_base; ?>css/estilos.css">
+
 <header>
     <div class="top-header" style="background-color: #7B5C4A; color: white; display: flex; align-items: center; padding: 10px 20px; justify-content: space-between;">
         
@@ -20,10 +22,10 @@ $ruta_php = $en_subcarpeta ? "" : "php/";
         </div>
 
         <div class="search-container" style="flex-grow: 1; max-width: 400px; margin: 0 20px;">
-            <form action="#" method="get" style="display: flex; background: #E8E4F0; border-radius: 20px; padding: 5px 15px;">
-                <input type="text" name="buscador" id="buscador" placeholder="Buscar productos..." style="border: none; background: transparent; width: 100%; outline: none;">
-                <button type="submit" style="border: none; background: transparent; cursor: pointer;">
-                    🔍
+            <form action="#" method="get" style="display: flex; background: #E8E4F0; border-radius: 20px; padding: 5px 15px; align-items: center;">
+                <input type="text" name="buscador" id="buscador" placeholder="Buscar productos..." style="border: none; background: transparent; width: 100%; outline: none; color: black;">
+                <button type="submit" style="border: none; background: transparent; cursor: pointer; display: flex; align-items: center;">
+                    <img src="<?php echo $ruta_base; ?>img/lupa.jpg" alt="buscar" style="width: 20px; height: 20px;">
                 </button>
             </form>
         </div>
@@ -40,7 +42,9 @@ $ruta_php = $en_subcarpeta ? "" : "php/";
                 <a href="<?php echo $ruta_php; ?>cerrar_sesion.php" style="color: white; text-decoration: none; border: 1px solid white; padding: 2px 5px; border-radius: 4px;">Cerrar Sesión</a>
             <?php endif; ?>
             
-            <a href="#" style="color: white;">🛒</a>
+            <a href="#" style="display: flex; align-items: center;">
+                <img src="<?php echo $ruta_base; ?>img/carrito.png" alt="carrito" style="width: 30px; height: 30px;">
+            </a>
         </div>
     </div>
 
