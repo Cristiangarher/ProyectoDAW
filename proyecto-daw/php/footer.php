@@ -10,17 +10,17 @@
         <div class="footer-column" style="flex: 1; min-width: 200px; margin-bottom: 20px;">
             <h3 style="font-size: 16px; margin-bottom: 15px;">Sobre Ferretería García</h3>
             <ul style="list-style: none; padding: 0; font-size: 14px; line-height: 2;">
-                <li><a href="nosotros.php" style="color: white; text-decoration: none;">Quiénes somos</a></li>
-                <li><a href="condiciones.php" style="color: white; text-decoration: none;">Condiciones generales</a></li>
-                <li><a href="cookies.php" style="color: white; text-decoration: none;">Políticas de cookies</a></li>
+                <li><a href="apartados-footer/quienessomos.php" style="color: white; text-decoration: none;">Quiénes somos</a></li>
+                <li><a href="apartados-footer/condiciones.php" style="color: white; text-decoration: none;">Condiciones generales</a></li>
+                <li><a href="apartados-footer/cookies.php" style="color: white; text-decoration: none;">Políticas de cookies</a></li>
             </ul>
         </div>
 
         <div class="footer-column" style="flex: 1; min-width: 200px; margin-bottom: 20px;">
             <h3 style="font-size: 16px; margin-bottom: 15px;">Compra con confianza</h3>
             <ul style="list-style: none; padding: 0; font-size: 14px; line-height: 2;">
-                <li><a href="garantia.php" style="color: white; text-decoration: none;">Garantía compra segura</a></li>
-                <li><a href="devoluciones.php" style="color: white; text-decoration: none;">Devoluciones y reembolso</a></li>
+                <li><a href="apartados-footer/garantia.php" style="color: white; text-decoration: none;">Garantía compra segura</a></li>
+                <li><a href="apartados-footer/devoluciones.php" style="color: white; text-decoration: none;">Devoluciones y reembolso</a></li>
             </ul>
         </div>
 
@@ -32,8 +32,8 @@
             
             <h3 style="font-size: 16px; margin-bottom: 15px;">Atención al cliente</h3>
             <ul style="list-style: none; padding: 0; font-size: 14px; line-height: 2;">
-                <li><a href="contacto.php" style="color: white; text-decoration: none;">Contáctanos</a></li>
-                <li><a href="ayuda.php" style="color: white; text-decoration: none;">Ayuda</a></li>
+                <li><a href="apartados/contacto.php" style="color: white; text-decoration: none;">Contáctanos</a></li>
+                <li><a href="apartados-footer/ayuda.php" style="color: white; text-decoration: none;">Ayuda</a></li>
             </ul>
         </div>
     </div>
