@@ -79,7 +79,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
 
-<div class="container">
+<?php include 'header.php'; ?>
+
+<div class="container" style="text-align: center;">
     <h2>Ferretería García</h2>
     <?php if($error): ?>
         <div class="error"><?php echo $error; ?></div>
@@ -101,6 +103,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         ¿No tienes cuenta? <a href="../registro.php">Regístrate aquí</a>
     </div>
 </div>
+
+<?php include 'footer.php'; ?>
 
 </body>
 </html>
