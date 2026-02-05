@@ -17,7 +17,7 @@ $ruta_php = $en_subcarpeta ? "" : "php/";
     <div class="top-header" style="background-color: #7B5C4A; color: white; display: flex; align-items: center; padding: 10px 20px; justify-content: space-between;">
         
         <div class="logo-section" style="display: flex; align-items: center;">
-            <img src="<?php echo $ruta_base; ?>img/ferreteria.jpg" alt="logo" class="logo" style="width: 60px; height: 60px; margin-right: 15px;">
+            <img src="img/ferreteria.jpg" alt="logo" class="logo" style="width: 60px; height: 60px; margin-right: 15px;">
             <h1 style="font-family: 'Segoe UI', sans-serif; margin: 0; font-size: 24px;">Ferretería<br>García</h1>
         </div>
 
@@ -42,26 +42,37 @@ $ruta_php = $en_subcarpeta ? "" : "php/";
                 <a href="<?php echo $ruta_php; ?>cerrar_sesion.php" style="color: white; text-decoration: none; border: 1px solid white; padding: 2px 5px; border-radius: 4px;">Cerrar Sesión</a>
             <?php endif; ?>
             
-            <a href="#" style="display: flex; align-items: center;">
-                <img src="<?php echo $ruta_base; ?>img/carrito.png" alt="carrito" style="width: 30px; height: 30px;">
+            <a href="php/carrito.php" style="display: flex; align-items: center;">
+                <img src="img/carrito.png" href="php/carrito.php" alt="carrito" style="width: 30px; height: 30px;">
             </a>
         </div>
     </div>
 
     <nav class="main-nav" style="background-color: black; padding: 12px 0;">
         <ul style="list-style: none; margin: 0; padding: 0; display: flex; justify-content: center; gap: 30px;">
-            <li><a href="<?php echo $ruta_base; ?>index.php" style="color: white; text-decoration: none;">Inicio</a></li>
-            <li><a href="#" style="color: white; text-decoration: none;">Productos</a></li>
-            <li><a href="#" style="color: white; text-decoration: none;">Categorías</a></li>
-            <li><a href="#" style="color: white; text-decoration: none;">Sobre nosotros</a></li>
-            <li><a href="#" style="color: white; text-decoration: none;">Contacto</a></li>
+            <li><a href="../index.php" style="color: white; text-decoration: none;">Inicio</a></li>
+            <li><a href="apartados/productos.php" style="color: white; text-decoration: none;">Productos</a></li>
+            <li><a href="apartados/categorias.php" style="color: white; text-decoration: none;">Categorías</a></li>
+            <li><a href="apartados/sobrenosotros.php" style="color: white; text-decoration: none;">Sobre nosotros</a></li>
+            <li><a href="apartados/contacto.php" style="color: white; text-decoration: none;">Contacto</a></li>
         </ul>
     </nav>
 
     <div class="breadcrumb" style="background-color: #D3D3D3; padding: 5px 20px; font-weight: bold;">
         <?php
         if ($archivo === 'index.php') echo "Inicio";
-        elseif ($archivo === 'productos.php') echo "Inicio > Productos";
+        elseif ($archivo === 'productos.php') echo "Productos";
+        elseif ($archivo === 'categorias.php') echo "Categorías";
+        elseif ($archivo === 'contacto.php') echo "Contacto";
+        elseif ($archivo === 'sobrenosotros.php') echo "Sobre nosotros";
+        elseif ($archivo === 'quienessomos.php') echo "Quiénes somos";
+        elseif ($archivo === 'garantia.php') echo "Garantía compra segura";
+        elseif ($archivo === 'condiciones.php') echo "Condiciones generales";
+        elseif ($archivo === 'devoluciones.php') echo "Devoluciones y reembolsos";
+        elseif ($archivo === 'cookies.php') echo "Política de cookies";
+        elseif ($archivo === 'ayuda.php') echo "Ayuda";
+        elseif ($archivo === 'proveedores.php') echo "Proveedores";
+        elseif ($archivo === 'carrito.php') echo "Carrito compra";
         else echo "Inicio"; 
         ?>
     </div>
