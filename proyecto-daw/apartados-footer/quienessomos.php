@@ -6,44 +6,44 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <title>Quiénes somos - Ferretería García</title>
+    <link rel="icon" href="../img/ferreteria.png">
     <link rel="stylesheet" href="css/estilos.css">
+    <style>
+        .contenido {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <?php include '../php/header.php'; ?>
 
-    <div style="text-align: center; margin-top: 50px;">
-        <h1>Formulario de Registro</h1>
-        <form action="php/create.php" method="POST" style="display: inline-block; text-align: left;">
-            <label>Nombre:</label><br>
-            <input type="text" name="nombre" required><br><br>
+    <main class="contenido">
+        <h1>¿Quiénes somos?</h1>
+        <br>
 
-            <label>Fecha de nacimiento:</label><br>
-            <input type="date" name="fecha_nac" required><br><br>
+        <p>Somos tu ferretería de confianza, combinando la experiencia de toda la vida con la comodidad de la compra online.</p>
+        <br>
 
-            <label>Dirección:</label><br>
-            <input type="text" name="direccion" required><br><br>
+        <details>
+            <summary>¿Quiénes somos?</summary>
+            <p>Una empresa familiar con más de 20 años de experiencia en el sector de las herramientas y el bricolaje profesional.</p>
+        </details>
+        <br>
 
-            <label>Correo electrónico:</label><br>
-            <input type="email" name="correo" required><br><br> 
+        <details>
+            <summary>Nuestra Misión</summary>
+            <p>Ayudarte a encontrar la solución perfecta para tu reforma o proyecto, ofreciendo solo marcas de primera calidad.</p>
+        </details>
+        <br>
 
-             <label>Contraseña:</label><br>
-            <input type="password" name="contrasena" required><br><br>
-
-            <label>Género:</label><br>
-            <select name="genero" required>
-                    <option value="">Seleccione...</option>
-                    <option value="Hombre">Hombre</option>
-                    <option value="Mujer">Mujer</option>
-                    <option value="Otro">Otro</option>
-            </select><br><br>
-
-            <button type="submit">Registrar Usuario</button>
-        </form>
-    </div>
-
-    <div style="text-align: center; margin: 50px 0;">
-        <form action="php/create.php" method="POST"></form>
-    </div>
+        <details>
+            <summary>¿Por qué nosotros?</summary>
+            <p>Porque ofrecemos asesoramiento experto, envíos rápidos y una garantía de compra 100% segura.</p>
+        </details>
+    </main>
 
     <?php 
         include '../php/footer.php';

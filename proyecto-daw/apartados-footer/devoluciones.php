@@ -6,47 +6,53 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <title>Devoluciones y reembolso - Ferretería García</title>
+    <link rel="icon" href="../img/ferreteria.png">
     <link rel="stylesheet" href="css/estilos.css">
+    <style>
+        .contenido {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <?php include '../php/header.php'; ?>
 
-    <div style="text-align: center; margin-top: 50px;">
-        <h1>Devoluciones y reembolso</h1>
-        <form action="php/create.php" method="POST" style="display: inline-block; text-align: left;">
-            <label>Nombre:</label><br>
-            <input type="text" name="nombre" required><br><br>
+    <main class="contenido">
+        <h1>Devoluciones y Reembolsos</h1>
+        <br>
 
-            <label>Fecha de nacimiento:</label><br>
-            <input type="date" name="fecha_nac" required><br><br>
+        <details>
+            <summary>¿Por qué motivos puedo devolver uno o varios artículos?</summary>
+            <p>Puedes devolver tu pedido en cualquier caso en que haya un error por nuestra parte, como en los casos ya citados de:</p>
+            <p>Productos incluidos equivocadamente en tu envío.</p>
+            <p>Productos defectuosos.</p>
+            <p>Productos dañados.</p>
+        </details>
+        <br>
 
-            <label>Dirección:</label><br>
-            <input type="text" name="direccion" required><br><br>
+        <details>
+            <summary>En caso de que no podamos entregarte el pedido completo.</summary>
+            <p>En esos supuestos, todos los costes de la devolución son de nuestra cuenta exclusivamente, sin ningún cargo para ti, y procederemos a devolverte tu dinero cuanto antes en el mismo método de pago utilizado en la compra. Dispones, como máximo, de catorce (14 días) naturales (es decir, incluidos sábados, domingos y festivos) a contar desde el día de la recepción del pedido, para verificar si los productos recibidos están en perfecto estado y que no exista ningún error en el pedido. Esperamos no habernos equivocado, pero si fuese así, por favor envíanos tu petición de devolución dentro de ese plazo.</p>
+        </details>
+        <br>
 
-            <label>Correo electrónico:</label><br>
-            <input type="email" name="correo" required><br><br> 
+        <details>
+            <summary>¿Quién paga el coste de la devolución?</summary>
+            <p>Como hemos dicho, los gastos de devolución irán a nuestro exclusivo cargo siempre que exista un error por nuestra parte o el pedido sea servido incompleto. Para ello, verificaremos que el producto que devuelves está efectivamente dañado o resulta defectuoso, así como si el artículo fue añadido por error a tu pedido o si tu pedido fue servido de forma incompleta, y te lo confirmaremos.</p>
+        </details>
+        <br>
 
-             <label>Contraseña:</label><br>
-            <input type="password" name="contrasena" required><br><br>
+        <details>
+            <summary>¿Dónde puedo devolver mi pedido?</summary>
+            <p>En cambio, en el caso de tratarse de una devolución por desistimiento, los costes serán de tu cargo.</p>
+            <p>Si lo prefieres puedes llevar el pedido a tu tienda habitual y ahorrarte el coste de envío. Te aconsejamos que optes por esta opción.</p>
+        </details>
+        <br>
+    </main>
 
-            <label>Género:</label><br>
-            <select name="genero" required>
-                    <option value="">Seleccione...</option>
-                    <option value="Hombre">Hombre</option>
-                    <option value="Mujer">Mujer</option>
-                    <option value="Otro">Otro</option>
-            </select><br><br>
-
-            <button type="submit">Registrar Usuario</button>
-        </form>
-    </div>
-
-    <div style="text-align: center; margin: 50px 0;">
-        <form action="php/create.php" method="POST"></form>
-    </div>
-
-    <?php 
-        include '../php/footer.php';
-    ?>
+    <?php include '../php/footer.php'; ?>
 </body>
 </html>

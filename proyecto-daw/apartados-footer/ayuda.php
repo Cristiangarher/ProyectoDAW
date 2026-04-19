@@ -6,47 +6,50 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <title>Ayuda - Ferretería García</title>
+    <link rel="icon" href="../img/ferreteria.png">
     <link rel="stylesheet" href="css/estilos.css">
+    <style>
+        .contenido {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <?php include '../php/header.php'; ?>
 
-    <div style="text-align: center; margin-top: 50px;">
-        <h1>Formulario de Registro</h1>
-        <form action="php/create.php" method="POST" style="display: inline-block; text-align: left;">
-            <label>Nombre:</label><br>
-            <input type="text" name="nombre" required><br><br>
+    <main class="contenido">
+    <h1>Centro de Ayuda</h1>
+    <p>Resuelve tus dudas rápidamente. Si no encuentras lo que buscas, puedes contactar con nuestro equipo técnico.</p>
+    <br>
 
-            <label>Fecha de nacimiento:</label><br>
-            <input type="date" name="fecha_nac" required><br><br>
+    <details>
+        <summary>¿Cómo realizo un pedido?</summary>
+        <p>Añade los productos al carrito, pulsa en el icono de la cesta y sigue los pasos para finalizar la compra.</p>
+    </details>
+    <br>
 
-            <label>Dirección:</label><br>
-            <input type="text" name="direccion" required><br><br>
+    <details>
+        <summary>¿Cuánto tardará en llegar mi compra?</summary>
+        <p>El plazo de entrega suele ser de 24 a 72 horas laborables tras la confirmación del pago.</p>
+    </details>
+    <br>
 
-            <label>Correo electrónico:</label><br>
-            <input type="email" name="correo" required><br><br> 
+    <details>
+        <summary>¿Qué métodos de pago aceptáis?</summary>
+        <p>Puedes pagar con tarjeta de crédito/débito, Bizum o transferencia bancaria de forma segura.</p>
+    </details>
+    <br>
 
-             <label>Contraseña:</label><br>
-            <input type="password" name="contrasena" required><br><br>
+    <details>
+        <summary>¿Puedo devolver un producto?</summary>
+        <p>Sí, tienes 14 días para devolver tu pedido siempre que esté en su embalaje original y sin usar.</p>
+    </details>
+    <br>
 
-            <label>Género:</label><br>
-            <select name="genero" required>
-                    <option value="">Seleccione...</option>
-                    <option value="Hombre">Hombre</option>
-                    <option value="Mujer">Mujer</option>
-                    <option value="Otro">Otro</option>
-            </select><br><br>
-
-            <button type="submit">Registrar Usuario</button>
-        </form>
-    </div>
-
-    <div style="text-align: center; margin: 50px 0;">
-        <form action="php/create.php" method="POST"></form>
-    </div>
-
-    <?php 
-        include '../php/footer.php';
-    ?>
+    </main>
+    <?php include '../php/footer.php'; ?>
 </body>
 </html>
